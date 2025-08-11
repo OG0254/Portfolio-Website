@@ -4,144 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Ogada | Portfolio</title>
-    <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    body {
-        background-color: #f4f7fa;
-        color: #333;
-        line-height: 1.6;
-    }
-
-    header {
-        background-color: #007acc;
-        color: white;
-        padding: 2rem 1rem;
-        text-align: center;
-    }
-
-    nav {
-        background: #004a75;
-        padding: 1rem;
-        text-align: center;
-    }
-    nav a:hover {
-        color: #ffdd57;
-    }
-
-    nav a {
-        color: white;
-        margin: 0 1rem;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    section {
-        padding: 2rem 1rem;
-        max-width: 900px;
-        margin: auto;
-    }
-
-    section:not(:first-of-type) {
-        border-top: 2px solid #ddd;
-    }
-
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-    }
-
-    .project-card {
-        background: white;
-        padding: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    footer {
-        background: #222;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        margin-top: 2rem;
-    }
-
-    #contact p a {
-        color: #007acc;
-        text-decoration: none;
-    }
-
-    #contact p a:hover {
-        text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-        nav a {
-            display: block;
-            margin: 0.5rem 0;
-        }
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- ===== HEADER ===== -->
     <header>
-    <h1>Brian Ogada</h1>
-    <p>Web Developer | Problem Solver | Tech Enthusiast</p>
+        <nav class="container">
+            <h1 class="logo">Brian<span>Ogada</span></h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm an aspiring backend developer with a strong focus on Python and a growing command of web technologies and database systems. While my journey began with building responsive websites using raw HTML and CSS, my true passion lies in crafting powerful, scalable backend systems that drive modern applications.
-            <br><br>
-            I’m actively building a solid foundation in backend development, diving deep into Python, FastAPI, PostgreSQL, and automation tools like Selenium and the OS module. I’m also familiarizing myself with databases and APIs key components in modern backend work.
-            <br><br>
-            I approach each project as a learning opportunity, blending curiosity with discipline. Whether it's participating in coding hackathons, building CLI tools, or learning new frameworks, I'm committed to mastering backend development and using it to solve real-world problems efficiently.  </p>
-        </p>
+    <!-- ===== HERO ===== -->
+    <section class="hero container">
+        <h2>Hello, I'm <span>Brian</span></h2>
+        <p>Aspiring Backend Developer | Python Enthusiast | Automation Lover</p>
+        <a href="#projects" class="btn">View My Work</a>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <img src="Ogada.jpg" alt="Brian Ogada" class="profile-pic">
+            <p>
+                Hi! I’m Brian, an aspiring backend developer passionate about Python, FastAPI, and automation. 
+                I focus on creating clean, functional websites and robust backend systems. 
+                My goal is to combine technology and creativity to solve real-world problems.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
             <div class="project-card">
-                <h3>Project One</h3>
-                <p>Built a CLI-based Python application to track and manage freelance income and expenses. Designed with modular code and object-oriented structure to organize records, calculate balances, and generate summaries.</p>
+                <h3>Freelancer Income & Expense Manager</h3>
+                <p>A command-line Python app for managing freelance finances using file operations and OOP.</p>
+                <a href="#" class="btn">View Project</a>
             </div>
             <div class="project-card">
-                <h3>Project Two</h3>
-                <p>Developed a responsive personal portfolio using only HTML and CSS for a coding hackathon. Demonstrates proficiency in semantic structuring, responsive layout techniques, and styling from scratch without the use of external frameworks or libraries.</p>
+                <h3>Portfolio Website</h3>
+                <p>This responsive portfolio was built from scratch using only HTML & CSS.</p>
+                <a href="#" class="btn">View Project</a>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: ogadabrian2@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/brianogada</p>
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Feel free to reach out if you want to collaborate or just say hi!</p>
+        <p>Email: <a href="mailto:brian.ogada@example.com">brian.ogada@example.com</a></p>
     </section>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>© 2025 Brian Ogada | Designed with ❤️ using HTML & CSS</p>
     </footer>
 
 </body>
