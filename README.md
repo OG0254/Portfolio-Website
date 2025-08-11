@@ -36,3 +36,7 @@ I'm an aspiring backend developer currently focused on Python, FastAPI, PostgreS
 - HTML5
 - CSS3
 - Python (for CLI projects)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 676512ab4013954e1a11303862b9b24e96112f35
